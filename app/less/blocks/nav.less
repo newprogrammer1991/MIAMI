@@ -1,0 +1,30 @@
+.nav {
+  width: 100%;
+  position: absolute;
+  bottom: 60px;
+
+}
+
+.nav__items {
+  display: flex;
+  justify-content: space-between;
+  a {
+    color: #ffffff;
+    font-weight: @font-weight-medium;
+  }
+}
+
+@media screen and @mini-width {
+  .nav {
+    position: static;
+    text-align: center;
+  }
+
+  .nav__items {
+    display: block;
+  }
+
+  .nav__item {
+    margin-bottom: 25px;
+  }
+}

@@ -1,0 +1,29 @@
+.contact {
+  .container {
+    display: flex;
+    justify-content: space-between;
+    flex-flow: wrap;
+  }
+}
+
+.contact__address {
+  width: 50%;
+  font-size: @font-size-text;
+
+  p {
+    margin-top: 33px;
+  }
+
+  a {
+    color: @black;
+  }
+}
+
+@media all and @mini-width {
+  .contact__address {
+    p {
+      margin-top: 10px;
+    }
+  }
+
+}

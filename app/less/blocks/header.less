@@ -1,0 +1,54 @@
+.header {
+  max-height: 765px;
+  padding-top: 100px;
+  background-image: url("../../img/bg-city.png");
+  background-position: center;
+  background-size: cover;
+  background-attachment: fixed;
+  .container {
+    height: 90vh;
+    position: relative;
+  }
+}
+
+.header__top {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__logo {
+  width: 15%;
+  margin-top: -75px;
+  text-align: center;
+  svg {
+    width: 100%;
+    fill: #ffffff;
+  }
+}
+
+.header__number, a {
+  text-transform: uppercase;
+  color: @decor-color;
+}
+
+@media screen and @mini-width {
+  .header {
+    max-height: 500px;
+    background: #080d35; /* fallback for old browsers */
+    background-image: none;
+
+  }
+
+  .header__number, .header__order {
+    display: none;
+  }
+
+  .header__logo {
+    width: 100%;
+    margin-bottom: 60px;
+    svg {
+      transform: translateX(10px);
+    }
+  }
+}
