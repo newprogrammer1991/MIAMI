@@ -135,7 +135,7 @@ gulp.task('build', function (fn) {
 gulp.task('default', ['build'])
 
 gulp.task('deploy', function () {
-    return gulp.src('**/*', {cwd: buildPath})
+    return gulp.src('**/*', {cwd: 'build'})
         .pipe(gh_pages())
 });
 

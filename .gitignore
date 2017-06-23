@@ -4,3 +4,4 @@ app/css
 app/js/dev/
 app/img/symbols.svg
 .idea/
+.publish/
