@@ -32,7 +32,7 @@ img {
   margin: 0 auto;
 }
 
-p, h2, ul, ol, li {
+p, h2, ul, ol, li, span {
   margin: 0;
   padding: 0;
 }
@@ -105,6 +105,7 @@ section {
 
 .btn {
   display: block;
+  position: relative;
   background-color: @dark-blue;
   text-transform: uppercase;
   text-align: center;
@@ -114,24 +115,60 @@ section {
   width: 100%;
   font-size: @font-size - 2px;
   line-height: 50px;
+  min-height: 50px;
+  cursor: pointer;
+
   &_inner {
     width: 200px;
     margin: 0 auto;
   }
+  &__content {
+    transition: 0.5s ease-in-out;
+
+  }
+  &_top, &_bottom {
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+
+  }
+  &_bottom {
+    top: -100px;
+    opacity: 0;
+    visibility: hidden;
+  }
+  &:hover &_bottom {
+    opacity: 1;
+    top: 0;
+    visibility: visible;
+    color: @golden;
+  }
+  &:hover &_top {
+    top: 100px;
+    opacity: 0;
+    visibility: hidden;
+
+  }
+
 }
 
-
-@media all and @mini-width {
-  html{
-    font-size: @font-size-html - 3px;
+@media all and @mobile-width {
+  html {
+    font-size: @font-size-html - 4px;
   }
+
+  body {
+    padding-bottom: 500px;
+  }
+
   .section {
-    padding-top: 70px;
-    padding-bottom: 70px;
+    padding-top: 60px;
+    padding-bottom: 50px;
   }
 
   .section__title {
-    font-size: @font-size-title - 10px;
+    font-size: @font-size-title - 0.5rem;
   }
 
   .section__form {
