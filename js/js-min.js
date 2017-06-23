@@ -1,0 +1,1 @@
+"use strict";var string="rwds",r=function(){return console.log(string)};r();
