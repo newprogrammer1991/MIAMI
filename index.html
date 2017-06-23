@@ -8,7 +8,7 @@
 </head>
 <body>
 <div class="main-wrapper">
-    <header class="header">
+    <header class="header" id="header">
         <div class="container">
             <div class="header__top">
                 <div class="header__number">8 800 500 50 50</div>
@@ -24,28 +24,32 @@
             <nav class="nav">
                 <ul class="nav__items">
                     <li class="nav__item">
-                        <a href="#">home</a>
+                        <a href="#header">home</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#">about us</a>
+                        <a href="#best">about us</a>
                     </li>
                     <li class="nav__item">
-                        <a href="#">gallery</a>
+                        <a href="#gallery">gallery</a>
                     </li>
-                    <li class="nav__item"><a href="#">consultation</a></li>
-                    <li class="nav__item"><a href="#">testimonials</a></li>
                     <li class="nav__item">
-                        <a href="#">contact</a>
+                        <a href="#consultation">consultation</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#testimonials">testimonials</a>
+                    </li>
+                    <li class="nav__item">
+                        <a href="#contact">contact</a>
                     </li>
                 </ul>
             </nav>
         </div>
     </header>
-    <section class="section best">
+    <section class="section best" id="best">
         <div class="container">
             <h2 class="best__title">Miami <strong>best</strong> Realry<span>— this</span></h2>
             <div class="best__text">
-                <p><strong>Over 50 years experience in love.</strong></p>
+                <p class="best__text-promo"><strong>Over 50 years experience in love.</strong></p>
                 <p>
                     Mazel and VA Tsukkerman in his "Analysis of musical works." Pointillism, which originated in the
                     music
@@ -68,7 +72,7 @@
             </div>
         </div>
     </section>
-    <section class="section gallery">
+    <section class="section gallery" id="gallery">
         <div class="container">
             <h2 class="section__title">gallery
                 <svg width="20" height="13">
@@ -91,7 +95,7 @@
                     </div>
                     <div class="gallery__collection-photo gallery__collection-photo_middle">
                         <picture>
-                            <source media="(max-width:600px" )
+                            <source media="(max-width:767px" )
                                     srcset="img/marina-palms.jpg" width="620" height="260">
                             <img src="img/edition-residens-out.jpg">
                         </picture>
@@ -109,11 +113,12 @@
                 <p class="gallery__collection-text">Edition Residence / <span>Miami Beach, FL 33139</span></p>
             </div>
             <div section__bottom>
-                <a class="btn btn_inner" href="#">view all</a>
+                <a class="btn btn_inner" href="#"><span class="btn_top btn__content">view all</span> <span
+                        class=" btn__content btn_bottom">good job</span></a>
             </div>
         </div>
     </section>
-    <section class="section consultation">
+    <section class="section consultation" id="consultation">
         <div class="container">
             <h2 class="section__title">
                 consultation
@@ -146,14 +151,15 @@
                         <input type="email" placeholder="Email">
                     </div>
                     <div class="form__field">
-                        <button class="btn" type="submit">Consultation</button>
+                        <button class="btn" type="submit"><span class="btn_top btn__content">Consultation</span><span
+                                class="btn_bottom btn__content">Good job</span></button>
                     </div>
                 </form>
             </div>
         </div>
     </section>
 
-    <section class="section testimonials">
+    <section class="section testimonials" id="testimonials">
         <div class="container">
             <h2 class="section__title">
                 testimonials
@@ -201,7 +207,7 @@
         </div>
 
     </section>
-    <section class="section contact">
+    <section class="section contact" id="contact">
         <div class="container">
             <h2 class="section__title">Contact
                 <svg width="20" height="13">
@@ -209,7 +215,7 @@
                 </svg>
             </h2>
             <div class="contact__address">
-                <a href="#">Hello@miami.com</a>
+                <a class="contact__address-email" href="#">Hello@miami.com</a>
                 <p>8 800 678 78 78<br>
                     8 800 700 98 98</p>
                 <p>400 first ave. n.<br>
@@ -227,14 +233,15 @@
                         <textarea placeholder="Message"></textarea>
                     </div>
                     <diV class="form__field">
-                        <button class="btn" type="submit">Write to us</button>
+                        <button class="btn" type="submit"><span class="btn_top btn__content">Write to us</span> <span
+                                class="btn_bottom btn__content">Good job</span></button>
                     </diV>
                 </form>
             </div>
         </div>
     </section>
 </div>
-<footer class="footer">
+<footer class="footer" id="footer">
     <div class="container">
         <div class="footer__logo">
             <svg>
