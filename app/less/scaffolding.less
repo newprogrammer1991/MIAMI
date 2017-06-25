@@ -106,16 +106,19 @@ section {
 .btn {
   display: block;
   position: relative;
+  width: 100%;
+  min-height: 50px;
   background-color: @dark-blue;
   text-transform: uppercase;
   text-align: center;
   color: #ffffff;
   border: none;
   outline: none;
-  width: 100%;
+  box-sizing: border-box;
+
   font-size: @font-size - 2px;
   line-height: 50px;
-  min-height: 50px;
+  z-index: 100;
   cursor: pointer;
 
   &_inner {
@@ -123,32 +126,33 @@ section {
     margin: 0 auto;
   }
   &__content {
-    transition: 0.5s ease-in-out;
+    transition: 0.3s ease-out;
 
   }
   &_top, &_bottom {
     position: absolute;
+    top: 0;
     left: 0;
     right: 0;
-    top: 0;
+    z-index: -100;
 
   }
   &_bottom {
-    top: -100px;
-    opacity: 0;
     visibility: hidden;
+    opacity: 0;
+    transform: translateY(20px);
+
   }
   &:hover &_bottom {
-    opacity: 1;
-    top: 0;
-    visibility: visible;
     color: @golden;
+    visibility: visible;
+    opacity: 1;
+    transform: none;
   }
   &:hover &_top {
-    top: 100px;
-    opacity: 0;
     visibility: hidden;
-
+    opacity: 0;
+    transform: translateY(-20px);
   }
 
 }
